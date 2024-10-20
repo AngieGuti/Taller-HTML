@@ -1,0 +1,85 @@
+/* Aqui se coloca el CSS */
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    background-color: #666;
+    color: #000;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4 {
+    color: #aaa;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+p {
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    font-family: fantasy;
+    border: 2px solid #666;
+    margin: 50px;
+    padding: 30px;
+}
+ul {
+    list-style-type: none;    
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+    font-family: fantasy;
+}
+table {
+    
+    color: #fff;
+    text-align: center;
+    font-family:'Lucida Sans';
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    width: 95%;
+}
+th {
+    background-color: #666;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-style: inset;
+}
+#grisClaro {
+    background-color: #aaa;
+    border-style: inset;
+    width: 30%;
+    padding: 10px;
+}
+th:nth-child(even) {
+    background-color: #666;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-style: inset;
+}
+td {
+    width: "100";
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-style: inset;
+}
+
+
+form {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
