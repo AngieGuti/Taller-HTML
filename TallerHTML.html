@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
+    <div id="fijo">
         <h1> AVENTURA </h1>
         <h4 id="BottomBorder"> Kings of Bachata </h4>
+    </div>
+
+    <div id="principalimagen">
         <img src="images/group_main.png" width="550" height="300" alt="Esta es una imagen del grupo musical Aventura" title="Grupo Aventura">
     </div>
+
     <div class="ContenedorPadre">
-        <div class="AlineacionIzquierda">
+        <div>
             <p> Integrantes </p>
             <ul>
                 <li> Romeo Santos </li>
@@ -24,10 +28,11 @@
             </ul>
         </div>
 
-        <div class="AlineacionDerecha">
-            <p> Aventura es un grupo de bachata de origen dominicano, el cual fue fundado en 1994 por Anthony Santos, quien es conocido como Romeo Santos. El grupo se disolvió en 2011, pero en 2019 se reunieron para realizar una gira de conciertos. </p>
+        <div>
+            <p> Aventura es un grupo de <a href="https://es.wikipedia.org/wiki/Bachata" target="_blank"> bachata </a> de origen dominicano, el cual fue fundado en 1994 por Anthony Santos, quien es conocido como Romeo Santos. El grupo se disolvió en 2011, pero en 2019 se reunieron para realizar una gira de conciertos. </p>
         </div>
     </div>
+
     <p> Canciones más famosas </p>
     <table>
         <tr>
@@ -88,6 +93,7 @@
         </div>
     </form>
     <p> Si deseas adquirir tus boletas, haz clic en el siguiente enlace </p>
-    <a href="https://www.eticket.co/eventos.aspx?idartista=791">Adquiere tus boletas en e-ticket</a>
+    <a id="eticket" href="https://www.eticket.co/eventos.aspx?idartista=791" target="_blank">Adquiere tus boletas en e-ticket</a>
+
 </body>
 </html>
