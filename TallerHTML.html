@@ -1,99 +1,133 @@
 <!doctype html>
 <html lang="es">
+
 <head>
     <!-- La etiqueta meta tiene el atributo charset y valor utf-8 para crear pàginas en español y que se desplieguen correctamenten las tildes -->
-    <meta charset="utf-8"> 
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aventura: Kings of Bachata</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-    <div id="fijo">
-        <h1> AVENTURA </h1>
-        <h4 id="BottomBorder"> Kings of Bachata </h4>
+
+<body class="bg-gradient p-4 p-md-8">
+
+    <div class="container my-3">
+        <div class="card mx-auto shadow-lg" style="max-width: 800px;">
+            <div class="card-header text-center">
+                <h1 class="text-orange-custom fw-bold">Aventura: Kings of Bachata</h1>
+            </div>
+
+            <div class="card-body">
+                <!-- Imagen -->
+                <div class="text-center mb-4">
+                    <img src="images/group_main.png" width="550" height="300" alt="Aventura" class="img-fluid rounded-lg shadow">
+                </div>
+
+                <!-- Descripción -->
+                <p class="text-secondary">
+                    Aventura es un grupo de <a class="link-danger" href="https://es.wikipedia.org/wiki/Bachata" target="_blank">bachata</a> de origen dominicano, el cual fue fundado en 1994 por Anthony
+                    Santos, quien es conocido como Romeo Santos. El grupo se disolvió en 2011, pero en 2019 se reunieron
+                    para realizar una gira de conciertos.
+                </p>
+
+                <!-- Canciones Famosas -->
+                <h2 class="text-orange-custom fw-semibold mb-2">Canciones más famosas:</h2>
+                <table class="table">
+                    <tr>
+                        <th id="grisOscuro">Canción</th>
+                        <th id="grisClaro"> Año</th>
+                        <th id="grisOscuro"> Álbum</th>
+                        <th id="grisClaro"> Duración</th>
+                    </tr>
+                    <tr>
+                        <td> Obsesión </td>
+                        <td> 2002 </td>
+                        <td> We Broke the Rules </td>
+                        <td> 3:47 </td>
+                    </tr>
+                    <tr>
+                        <td> El perdedor </td>
+                        <td> 2014 </td>
+                        <td> Formula, Vol. 2 </td>
+                        <td> 4:13 </td>
+                    </tr>
+                    <tr>
+                        <td> Inmortal </td>
+                        <td> 2019 </td>
+                        <td> Utopía </td>
+                        <td> 3:23 </td>
+                    </tr>   
+                    <tr>
+                        <td> Dile al amor </td>
+                        <td> 2009 </td>
+                        <td> The Last </td>
+                        <td> 4:30 </td>
+                    </tr>
+                </table>
+
+                <!-- Integrantes -->
+                <h2 class="text-orange-custom fw-semibold mb-3">Integrantes de Aventura:</h2>
+                <div class="row row-cols-2 row-cols-md-4 g-4">
+                    <div class="col text-center">
+                        <div class="avatar mx-auto">RS</div>
+                        <p class="mt-2 text-secondary">Romeo Santos</p>
+                    </div>
+                    <div class="col text-center">
+                        <div class="avatar mx-auto">LS</div>
+                        <p class="mt-2 text-secondary">Lenny Santos</p>
+                    </div>
+                    <div class="col text-center">
+                        <div class="avatar mx-auto">HS</div>
+                        <p class="mt-2 text-secondary">Henry Santos</p>
+                    </div>
+                    <div class="col text-center">
+                        <div class="avatar mx-auto">MS</div>
+                        <p class="mt-2 text-secondary">Max Santos</p>
+                    </div>
+                </div>
+
+                <!-- Generos influencia -->
+                <h2 class="text-orange-custom fw-semibold mt-4">Géneros que influencian a Aventura:</h2>
+                <ul class="list-group
+                list-group-flush">
+                    <li class="list-group
+                    list-group-item">Rock</li>
+                    <li class="list-group
+                    list-group-item">Hip Hop</li>
+                    <li class="list-group
+                    list-group-item">R&B</li>
+                    <li class="list-group
+                    list-group-item">Reggaeton</li>
+                </ul>
+
+
+                <!-- Formulario-->
+                <h2 class="text-orange-custom fw-semibold mt-4">¿Quieres saber más?</h2>
+                <p class="text-secondary">Llena el siguiente formulario con tus datos!!!</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo" name="correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Cuentanos" class="form-label">Cuentanos!</label>
+                        <textarea class="form-control" id="Cuentanos" name="Cuentanos" required></textarea>
+                    </div>
+                    <div class="mb-3 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-danger">Enviar</button>
+                    </div>
+                </form>             
+                
+                
+            </div>
+        </div>
     </div>
-
-    <div id="principalimagen">
-        <img src="images/group_main.png" width="550" height="300" alt="Esta es una imagen del grupo musical Aventura" title="Grupo Aventura">
-    </div>
-
-    <div class="ContenedorPadre">
-        <div>
-            <p> Integrantes </p>
-            <ul>
-                <li> Romeo Santos </li>
-                <li> Lenny Santos </li>
-                <li> Henry Santos </li>
-                <li> Max Santos </li>
-            </ul>
-        </div>
-
-        <div>
-            <p> Aventura es un grupo de <a href="https://es.wikipedia.org/wiki/Bachata" target="_blank"> bachata </a> de origen dominicano, el cual fue fundado en 1994 por Anthony Santos, quien es conocido como Romeo Santos. El grupo se disolvió en 2011, pero en 2019 se reunieron para realizar una gira de conciertos. </p>
-        </div>
-    </div>
-
-    <p> Canciones más famosas </p>
-    <table>
-        <tr>
-            <th id="grisOscuro">Canción</th>
-            <th id="grisClaro"> Año</th>
-            <th id="grisOscuro"> Álbum</th>
-            <th id="grisClaro"> Duración</th>
-        </tr>
-        <tr>
-            <td> Obsesión </td>
-            <td> 2002 </td>
-            <td> We Broke the Rules </td>
-            <td> 3:47 </td>
-        </tr>
-        <tr>
-            <td> El perdedor </td>
-            <td> 2014 </td>
-            <td> Formula, Vol. 2 </td>
-            <td> 4:13 </td>
-        </tr>
-        <tr>
-            <td> Inmortal </td>
-            <td> 2019 </td>
-            <td> Utopía </td>
-            <td> 3:23 </td>
-        </tr>   
-        <tr>
-            <td> Dile al amor </td>
-            <td> 2009 </td>
-            <td> The Last </td>
-            <td> 4:30 </td>
-        </tr>
-    </table>
-    
-    <a href="https://youtu.be/TVesgEZGKLs?si=ncgJZTQaUZgjjD_m" target="_blank">  
-        <img src="images/romeo-santos-1.jpg" width="200" height="200" alt="Romeo Santos" title="Romeo Santos">
-    </a>
-    <h4 class="TituloDenotado"> Quisieras saber más?</h4>
-    <p> Llena el siguiente formulario con tus datos!!! </p>
-    <form>
-        <div> 
-            <label for="nombre">Nombre</label>
-            <br/>
-            <input type="text" id="nombre" name="nombre" required>
-        </div>
-        <div> 
-            <label for="correo">Correo</label>
-            <br/>
-            <input type="email" id="correo" name="correo" required>
-        </div>
-        <div> 
-            <label for="Cuentanos">Cuentanos!</label>
-            <br/>
-            <textarea id="Cuentanos" name="Cuentanos" required></textarea>
-        </div>
-        <div>
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
-    <p> Si deseas adquirir tus boletas, haz clic en el siguiente enlace </p>
-    <a id="eticket" href="https://www.eticket.co/eventos.aspx?idartista=791" target="_blank">Adquiere tus boletas en e-ticket</a>
-
 </body>
+
 </html>
